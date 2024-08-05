@@ -20,7 +20,7 @@ import java.util.List;
  * Esta classe é responsável por realizar operações de banco de dados relacionadas ao Cliente.
  */
 @Service
-public class JdbcTemplateClienteClienteDaoImpl implements IJdbcTemplateClienteDao {
+public class JdbcTemplateClienteDaoImpl implements IJdbcTemplateClienteDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 

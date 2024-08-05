@@ -1,6 +1,6 @@
 package br.com.forcamp.estacionamento.cliente;
 
-import br.com.forcamp.estacionamento.dao.impl.JdbcTemplateClienteClienteDaoImpl;
+import br.com.forcamp.estacionamento.dao.impl.JdbcTemplateClienteDaoImpl;
 import br.com.forcamp.estacionamento.model.cliente.Cliente;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,13 +21,13 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class JdbcTemplateClienteClienteDaoImplTest {
+class JdbcTemplateClienteDaoImplTest {
 
     @Mock
     private JdbcTemplate jdbcTemplate;
 
     @InjectMocks
-    private JdbcTemplateClienteClienteDaoImpl dao;
+    private JdbcTemplateClienteDaoImpl dao;
 
     @BeforeEach
     void setUp() {

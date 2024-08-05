@@ -5,7 +5,7 @@ import br.com.forcamp.estacionamento.enums.ClienteEnums;
 import br.com.forcamp.estacionamento.exception.cliente.*;
 import br.com.forcamp.estacionamento.model.RespostaPadrao;
 import br.com.forcamp.estacionamento.model.cliente.Cliente;
-import br.com.forcamp.estacionamento.dao.impl.JdbcTemplateClienteClienteDaoImpl;
+import br.com.forcamp.estacionamento.dao.impl.JdbcTemplateClienteDaoImpl;
 import br.com.forcamp.estacionamento.dao.impl.ArmazenamentoJsonDaoImpl;
 import br.com.forcamp.estacionamento.usecase.ClienteService;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,7 +25,7 @@ import static org.mockito.Mockito.*;
 class ClienteServiceTest {
 
     @Mock
-    private JdbcTemplateClienteClienteDaoImpl jdbcTemplateClienteDaoImpl;
+    private JdbcTemplateClienteDaoImpl jdbcTemplateClienteDaoImpl;
 
     @Mock
     private ArmazenamentoJsonDaoImpl armazenamentoJsonDaoImpl;

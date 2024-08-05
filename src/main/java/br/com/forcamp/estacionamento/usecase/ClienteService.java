@@ -1,7 +1,7 @@
 package br.com.forcamp.estacionamento.usecase;
 
 import br.com.forcamp.estacionamento.dao.impl.ArmazenamentoJsonDaoImpl;
-import br.com.forcamp.estacionamento.dao.impl.JdbcTemplateClienteClienteDaoImpl;
+import br.com.forcamp.estacionamento.dao.impl.JdbcTemplateClienteDaoImpl;
 import br.com.forcamp.estacionamento.dtos.ClienteRequestDTO;
 import br.com.forcamp.estacionamento.enums.ClienteEnums;
 import br.com.forcamp.estacionamento.exception.cliente.*;
@@ -22,7 +22,7 @@ import java.util.List;
 public class ClienteService {
 
     // Declaração de dependências
-    private final JdbcTemplateClienteClienteDaoImpl jdbcTemplateClienteDaoImpl;
+    private final JdbcTemplateClienteDaoImpl jdbcTemplateClienteDaoImpl;
     private final ArmazenamentoJsonDaoImpl armazenamentoJsonDaoImpl;
 
     /**
@@ -32,7 +32,7 @@ public class ClienteService {
      * @param armazenamentoJsonDaoImpl Implementação do DAO para armazenamento em JSON.
      */
     @Autowired
-    public ClienteService(JdbcTemplateClienteClienteDaoImpl jdbcTemplateClienteDaoImpl, ArmazenamentoJsonDaoImpl armazenamentoJsonDaoImpl) {
+    public ClienteService(JdbcTemplateClienteDaoImpl jdbcTemplateClienteDaoImpl, ArmazenamentoJsonDaoImpl armazenamentoJsonDaoImpl) {
         this.jdbcTemplateClienteDaoImpl = jdbcTemplateClienteDaoImpl;
         this.armazenamentoJsonDaoImpl = armazenamentoJsonDaoImpl;
     }
