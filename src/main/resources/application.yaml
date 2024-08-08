@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: estacionamento
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SDE?ApplicationName=estacionamento
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  hikari:
+    maximum-pool-size: 3
+    minimum-idle: 2
+    idle-timeout: 20000
+    poolName: estacionamento
+
+    springdoc:
+      api-docs:
+        path: /v3/api-docs
+      swagger-ui:
+        path: /swagger-ui.html
