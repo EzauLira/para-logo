@@ -1,0 +1,33 @@
+http:localhost:8080/swagger-ui/index.html
+Entrada veículo:
+{
+  "placa": "XXX1234",
+  "dataEntrada": "01/08/2024",
+  "horaEntrada": "08:00"
+}
+--------------------------------
+Saída veículo:
+{
+  "placa": "XXX1234",
+  "dataSaida": "01/08/2024",
+  "horaSaida": "18:00"
+}
+--------------------------------
+Valor estacionamento:
+{
+  "placa": "XXX1234",
+  "dataEntrada": "01/08/2024",
+  "horaEntrada": "08:00",
+  "dataSaida": "01/08/2024",
+  "horaSaida": "18:00"
+}
+--------------------------------
+Buscar veículo específico:
+{
+  "placa": "XXX1234"
+}
+-------------------------------
+Deletar registro por data:
+{
+  "dataEntrada": "01/08/2024"
+}

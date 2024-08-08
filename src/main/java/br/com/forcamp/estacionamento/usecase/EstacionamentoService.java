@@ -85,7 +85,6 @@ public class EstacionamentoService {
      */
     public ResponseEntity<RespostaPadrao> registrarSaida(EstacionamentoRequestDTO request) {
         try {
-
             /**
              * Valida e retorna uma mensagem caso algum parâmetro esteja fora do nomrmal.
              */

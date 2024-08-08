@@ -1,6 +1,7 @@
 package br.com.forcamp.estacionamento.model.estacionamento;
 
 
+import br.com.forcamp.estacionamento.utils.Estacionamento.CustoEstacionamento;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -36,7 +37,7 @@ public class EstacionamentoComCusto extends Estacionamento {
     /**
      * Calcula o custo com base na duração da estadia.
      *
-     * @return O custo calculado.
+     * @return o custo calculado.
      */
     public double calcularCusto() {
 
@@ -50,7 +51,7 @@ public class EstacionamentoComCusto extends Estacionamento {
         LocalDateTime dataHoraSaida;
 
         if (this.getDataSaida() == null || this.getHoraSaida() == null) {
-            dataHoraSaida = LocalDateTime.now(); // use the current time if the exit time is null
+            dataHoraSaida = LocalDateTime.now();
         } else {
             dataHoraSaida = LocalDateTime.parse(this.getDataSaida() + " " + this.getHoraSaida(), formatter);
         }
@@ -61,19 +62,18 @@ public class EstacionamentoComCusto extends Estacionamento {
         double diasEstacionado = duracao.toDays();
 
         if (diasEstacionado >= 1) {
-            custo = diasEstacionado * 100;
+            custo = diasEstacionado * CustoEstacionamento.CUSTO_DIA;
         } else if (horasEstacionado <= 1) {
-            custo = 10.0;
+            custo = CustoEstacionamento.CUSTO_HORA_1;
         } else if (horasEstacionado <= 3) {
-            custo = 20.0;
+            custo = CustoEstacionamento.CUSTO_HORA_3;
         } else if (horasEstacionado <= 4) {
-            custo = 25.0;
+            custo = CustoEstacionamento.CUSTO_HORA_4;
         } else if (horasEstacionado <= 5) {
-            custo = 20.0;
+            custo = CustoEstacionamento.CUSTO_HORA_5;
         } else {
-            custo = 15.0;
+            custo = CustoEstacionamento.CUSTO_HORA_RESTANTE;
         }
-
         return custo;
     }
 }
