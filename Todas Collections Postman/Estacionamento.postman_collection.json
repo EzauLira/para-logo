@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "596506a8-1624-407d-b8e2-50452abcd9cd",
+		"name": "Estacionamento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36971595"
+	},
+	"item": [
+		{
+			"name": "registrar-entrada",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/v1/registrar-entrada"
+			},
+			"response": []
+		},
+		{
+			"name": "registrar-saida",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/v1/registrar-saida"
+			},
+			"response": []
+		},
+		{
+			"name": "bucar-carro-especifico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/v1/buscar-carro-especifico"
+			},
+			"response": []
+		},
+		{
+			"name": "listar-todos-registros",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "listar-registro-ativo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "listar-registro-inativo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "vagas-disponiveis",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "valor-estacionamento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"placa\": \"AAA1231\"\r\n    } ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/pagamento"
+			},
+			"response": []
+		},
+		{
+			"name": "deletar-registros-data",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

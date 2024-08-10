@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "5a59528b-98fb-4d6e-a802-201863100a8b",
+		"name": "Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36971595"
+	},
+	"item": [
+		{
+			"name": "cadastrar-cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\":\"1\",\r\n    \"nome\":\"Ezaú Miguel Lira\",\r\n    \"rg\":\"123456789\",\r\n    \"telefone\":\"11912345678\",\r\n    \"placaveiculo\":\"AAA6A83\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/cadastrar-cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "buscar-cliente-especifico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rg\":\"789456123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/buscar-cliente-especifico"
+			},
+			"response": []
+		},
+		{
+			"name": "buscar-todos-clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/buscar-todos-clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "deletar-cliente-especifico",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/v1/deletar-cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "deletar-muitos-pela-data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dataRegistro\": \"2024-07-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/v1/deletar-muitos-pela-data"
+			},
+			"response": []
+		}
+	]
+}

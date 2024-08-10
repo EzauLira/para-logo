@@ -145,7 +145,7 @@ A configuração do banco de dados é feita no arquivo ***application.yaml***. C
 
    <div align="">
 <img src="https://github.com/user-attachments/assets/ef7710d1-e679-403d-8d1f-28b4360d3cff" height="200" /> 
-</div
+</div>
 
 
 3. Abra o Postan e importe as collections Cliente e Estacionamento localizado na pasta ***Todas Collections Postman***.

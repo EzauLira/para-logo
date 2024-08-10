@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/SDE?ApplicationName=estacionamento
     username: postgres
-    password: 123
+    password: admin
     driver-class-name: org.postgresql.Driver
   hikari:
     maximum-pool-size: 3
