@@ -98,7 +98,7 @@ A configuração do banco de dados é feita no arquivo ***application.yaml***. C
 1. Instale o ***[PostgreSQL clicando aqui](https://www.postgresql.org/download/)***. Caso não saiba como baixar e instalar ***[clique aqui](https://www.hashtagtreinamentos.com/instalacao-do-postgresql-sql?gad_source=1&gclid=CjwKCAjwk8e1BhALEiwAc8MHiEtLRun0xkGK3yckbc9VmjS1znQKeM5JlKHC6cCgtkjaCk1DXcMH4RoCopQQAvD_BwE).***
 
 
-2. 2. Após ter clonado o projeto e configurado o ***application.yaml***, vá até a pasta ***sql-scripts***. Nessa pasta estão todos os códigos necessários para criar as tabelas e funções no banco de dados.
+2.  Após ter clonado o projeto e configurado o ***application.yaml***, vá até a pasta ***sql-scripts***. Nessa pasta estão todos os códigos necessários para criar as tabelas e funções no banco de dados.
          <div align="">
          <img src="https://github.com/user-attachments/assets/4f7460fe-33e9-4fc2-b320-ad1daf8bf00a" height="300" />
          </div>
@@ -128,7 +128,7 @@ A configuração do banco de dados é feita no arquivo ***application.yaml***. C
 
 
 <div align="">
-<img src="https://github.com/user-attachments/assets/38111116-0a4d-42e5-88e7-e6f745418bc0" height="70" /> 
+<img src="https://github.com/user-attachments/assets/84de3eaf-4d7f-4e6c-8a05-8baea490d4a7" height="100" /> 
 </div>
 
 
@@ -138,23 +138,25 @@ A configuração do banco de dados é feita no arquivo ***application.yaml***. C
 1. Instale o ***[Postman clicando aqui](https://www.postman.com/downloads/)***.  Caso não saiba como baixar e instalar ***[clique aqui](https://www.alura.com.br/artigos/postman-como-instalar-dar-seus-primeiros-passos).***
 
 
-2. Crie as Collections.
+
+
+2. No projeto possuí a pasta: ***Todas Collection Postman***:
+
+
+   <div align="">
+<img src="https://github.com/user-attachments/assets/ef7710d1-e679-403d-8d1f-28b4360d3cff" height="200" /> 
+</div
+
+
+3. Abra o Postan e importe as collections Cliente e Estacionamento localizado na pasta ***Todas Collections Postman***.
 
 
 
-| <img src="https://github.com/user-attachments/assets/391d3270-2bc1-4064-bcec-8b26088e21aa" height="89" />| <img src="https://github.com/user-attachments/assets/aa3e1ebc-488e-4812-b234-0bf0ad2fedce" height="150" /> |
-|:---:|:----------------------------------------------------------------------------------------------------------:|
+| <img src="https://github.com/user-attachments/assets/f8801771-055f-4170-bd79-dd96e1fa14e1" height="90" />| <img src="https://github.com/user-attachments/assets/7341576b-9ade-4632-bf67-fe96210ede89" height="200" /> | <img src="https://github.com/user-attachments/assets/eea2a0b8-ac6c-4099-aba1-24987f30d5d6" height="200" /> |
+|:---:|:---:|:---:|
 
 
-3. Adicione as requests, de um nome a request, vá em body -> raw, em seguida preencha o corpo da requisição.
-
-
-
-| <img src="https://github.com/user-attachments/assets/2ffe3807-7e03-4e2b-989d-2d8f0caf2f47" height="250" /> | <img src="https://github.com/user-attachments/assets/4a55b77d-17ff-45dd-a537-9b1fcc12744d" height="300" /> |
-|:----------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
-
-
-4. 4. Feito tudo corretamente, você terá algo assim:
+4.  Feito tudo corretamente, você terá algo assim:
 
 
 
